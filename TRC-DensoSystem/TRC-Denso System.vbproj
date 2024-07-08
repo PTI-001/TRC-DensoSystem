@@ -130,6 +130,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="main\INFG.Designer.vb">
+      <DependentUpon>INFG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main\INFG.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="main\Login.designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -179,6 +185,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="main\INFG.resx">
+      <DependentUpon>INFG.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
